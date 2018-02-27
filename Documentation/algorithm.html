@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module algorithm</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>algorithm</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cxampp%5Chtdocs%5Cir1%5Calgorithm.py">c:\xampp\htdocs\ir1\algorithm.py</a></font></td></tr></table>
+    <p><tt>#&nbsp;-*-&nbsp;coding:&nbsp;utf-8&nbsp;-*-</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="json.html">json</a><br>
+<a href="locale.html">locale</a><br>
+<a href="math.html">math</a><br>
+</td><td width="25%" valign=top><a href="nltk.html">nltk</a><br>
+<a href="os.html">os</a><br>
+<a href="pickle.html">pickle</a><br>
+</td><td width="25%" valign=top><a href="re.html">re</a><br>
+<a href="sys.html">sys</a><br>
+<a href="time.html">time</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-direct_search"><strong>direct_search</strong></a>(query)</dt><dd><tt>Just&nbsp;a&nbsp;temporary&nbsp;search&nbsp;based&nbsp;on&nbsp;term&nbsp;frequency</tt></dd></dl>
+ <dl><dt><a name="-idf"><strong>idf</strong></a>(word)</dt><dd><tt>Calculaltes&nbsp;and&nbsp;returns&nbsp;the&nbsp;inverse&nbsp;document&nbsp;frequency&nbsp;log(N/df)</tt></dd></dl>
+ <dl><dt><a name="-isfloat"><strong>isfloat</strong></a>(value)</dt><dd><tt>Checks&nbsp;if&nbsp;the&nbsp;passed&nbsp;variable&nbsp;is&nbsp;a&nbsp;float</tt></dd></dl>
+ <dl><dt><a name="-isint"><strong>isint</strong></a>(value)</dt><dd><tt>Checks&nbsp;if&nbsp;the&nbsp;passed&nbsp;variable&nbsp;is&nbsp;an&nbsp;integer</tt></dd></dl>
+ <dl><dt><a name="-load_pkl"><strong>load_pkl</strong></a>()</dt><dd><tt>Loads&nbsp;data&nbsp;from&nbsp;a&nbsp;pickle&nbsp;file.&nbsp;ie.&nbsp;"data.pkl"</tt></dd></dl>
+ <dl><dt><a name="-print_format"><strong>print_format</strong></a>(doc_id)</dt><dd><tt>Converts&nbsp;variable&nbsp;doc_id&nbsp;to&nbsp;readable&nbsp;file&nbsp;location</tt></dd></dl>
+ <dl><dt><a name="-proper_noun_extractor_query"><strong>proper_noun_extractor_query</strong></a>(query)</dt><dd><tt>Extracts&nbsp;proper&nbsp;nouns&nbsp;from&nbsp;the&nbsp;given&nbsp;query</tt></dd></dl>
+ <dl><dt><a name="-punct_less"><strong>punct_less</strong></a>(word)</dt><dd><tt>Strips&nbsp;a&nbsp;passed&nbsp;string&nbsp;from&nbsp;all&nbsp;punctuations&nbsp;in&nbsp;['!',&nbsp;'#',&nbsp;'"',&nbsp;'%',&nbsp;'$',&nbsp;'&amp;',&nbsp;')',&nbsp;'(',&nbsp;'+',&nbsp;'-','.',':',"'",',','/','?','|']</tt></dd></dl>
+ <dl><dt><a name="-stopword_punc_removal_query"><strong>stopword_punc_removal_query</strong></a>(query)</dt><dd><tt>Preprocess&nbsp;a&nbsp;query&nbsp;in&nbsp;the&nbsp;following&nbsp;ways,<br>
+1)&nbsp;Word&nbsp;tokenize<br>
+2)&nbsp;Removes&nbsp;punctuation<br>
+3)&nbsp;Removes&nbsp;stop&nbsp;words<br>
+4)&nbsp;Converts&nbsp;the&nbsp;query&nbsp;to&nbsp;lowercase</tt></dd></dl>
+ <dl><dt><a name="-tf"><strong>tf</strong></a>(word, doc_id)</dt><dd><tt>Calculates&nbsp;and&nbsp;returns&nbsp;the&nbsp;term&nbsp;frequency&nbsp;log(tf)+1</tt></dd></dl>
+ <dl><dt><a name="-tf_idf"><strong>tf_idf</strong></a>(query)</dt><dd><tt>Calculates&nbsp;tf_idf&nbsp;of&nbsp;a&nbsp;query&nbsp;and&nbsp;returns&nbsp;the&nbsp;list&nbsp;of&nbsp;documents.&nbsp;ie.&nbsp;find[]<br>
+The&nbsp;query&nbsp;is&nbsp;preprocessed&nbsp;in&nbsp;the&nbsp;following&nbsp;way,<br>
+1)&nbsp;Extract&nbsp;proper&nbsp;noun&nbsp;from&nbsp;the&nbsp;query<br>
+2)&nbsp;Remove&nbsp;stopwords&nbsp;and&nbsp;punctuations&nbsp;from&nbsp;the&nbsp;query&nbsp;using&nbsp;wordnet()</tt></dd></dl>
+ <dl><dt><a name="-write_pkl"><strong>write_pkl</strong></a>(multimap_list)</dt><dd><tt>Writes&nbsp;data&nbsp;to&nbsp;a&nbsp;pickle&nbsp;file.&nbsp;ie.&nbsp;"data.pkl"</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>corpus_size</strong> = 5436<br>
+<strong>indian_express_size</strong> = 974<br>
+<strong>paper</strong> = 0<br>
+<strong>punctuation</strong> = '!"#$%&amp;<font color="#c040c0">\'</font>()*+,-./:;&lt;=&gt;?@[<font color="#c040c0">\\</font>]^_`{|}~'<br>
+<strong>return_count</strong> = 20<br>
+<strong>stopwords</strong> = &lt;WordListCorpusReader in '.../corpora/stopwords' (not loaded yet)&gt;<br>
+<strong>wordnet</strong> = &lt;WordNetCorpusReader in '.../corpora/wordnet' (not loaded yet)&gt;</td></tr></table>
+</body></html>
